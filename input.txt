@@ -1,0 +1,5 @@
+START
+l1: MOV R1 var1
+BYTE var1 #10
+l2: MOV R2 var1
+END
