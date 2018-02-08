@@ -5,6 +5,7 @@ pseudo = []
 
 symbol = {}
 icf = []
+pass2 = []
 
 
 with open("opcode.txt") as f:
@@ -101,3 +102,12 @@ for key in symbol.keys():
         error(key + " Not Found")
 
 print (symbol)
+
+for i in range(0,len(icf)):
+    if (icf[i] in symbol.keys()):
+        pass2.append(symbol[icf[i]])
+    else:
+        pass2.append(icf[i])
+
+print (pass2)
+        
